@@ -17,6 +17,7 @@
     --background-gray: #fafaf9;
     --text-footer: #78716c;
     --indent: 20px;
+    --indent-messengers: 10px;
 }
 
 
@@ -442,16 +443,12 @@ a:hover {
 
 .messengers {
     display: flex;
+    gap: var(--indent-messengers);
 }
 
 .messengers-icon {
-    padding-right: 10px;
     font-size: 24px;
     color: var(--text-footer);
-}
-
-.messengers-icon:last-child {
-    padding-right: 0px;
 }
 
 .messengers-icon:hover {
