@@ -554,16 +554,25 @@ a:hover {
     color: var(--text-gray);
 }
 
-
-/* Переделать блок - начало блока*/
-
+/* Переделка блока - начало блока*/
 
 .form {
     padding-top: 40px;
+}
+
+.form-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* gap: 10px; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-list {
+        flex-direction: column;
+    }
 }
 
 .form-input {
@@ -573,24 +582,35 @@ a:hover {
     border-radius: 10px;
     padding: 15px 15px 15px 15px;
     box-shadow: 2px 2px 4px var(--light-gray);
-    margin-right: 10px;
     outline: none;
-    margin-bottom: 20px;
+    /* flex-grow: 1; */
 }
 
 @media (max-width: 600px) {
     .form-input {
+        font-size: 16px;
         width: 100%;
-        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
     .form-input {
-        margin-bottom: 20px;
+        font-size: 16px;
+        flex-grow: 1;
     }
 }
 
+@media (min-width: 768px) and (max-width: 930px) {
+    .form-input {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 930px) and (max-width: 1024px) {
+    .form-input {
+        width: calc((100% - var(--indent)*2)/3);
+    }
+}
 
 .form-input:hover {
     box-shadow: 2px 2px 4px #b3b0ae;
@@ -608,12 +628,22 @@ a:hover {
 
 @media (max-width: 600px) {
     .button-form {
+        font-size: 16px;
         width: 100%;
     }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+    .button-form {
+        font-size: 16px;
+        padding: 15px 15px 15px 15px;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 930px) {
+    .button-form {
+        font-size: 16px;
+    }
 }
 
 .button-form:hover {
@@ -624,8 +654,7 @@ a:hover {
     background-color: #ea580c;
 }
 
-
-/* Переделать блок- окончание блока */
+/* Переделка блока- окончание блока */
 
 
 /* Отзывы */
