@@ -74,7 +74,7 @@ a {
 
 a:hover {
     color: var(--secondary-color);
-
+    transition: color 100ms linear;
 }
 
 .container {
@@ -174,6 +174,7 @@ a:hover {
 
 .nav-item:hover {
     color: var(--main-color);
+    transition: color 200ms linear;
 }
 
 .nav-item:last-child {
@@ -308,10 +309,12 @@ a:hover {
 
 .button-normal:hover {
     background-color: var(--secondary-color);
+    transition: background-color 200ms linear;
 }
 
 .button-normal:active {
     background-color: var(--secondary-color);
+    transition: background-color 200ms linear;
 }
 
 /* Преимущества */
@@ -405,6 +408,7 @@ a:hover {
 .advantage-item:hover {
     background: none;
     box-shadow: 0px 0px 20px var(--light-gray);
+    transition: box-shadow 200ms linear;
 }
 
 
@@ -614,6 +618,7 @@ a:hover {
 
 .form-input:hover {
     box-shadow: 2px 2px 4px #b3b0ae;
+    transition: box-shadow 200ms linear;
 }
 
 .button-form {
@@ -648,10 +653,12 @@ a:hover {
 
 .button-form:hover {
     background-color: #ea580c;
+    transition: background-color 200ms linear;
 }
 
 .button-form:active {
     background-color: #ea580c;
+    transition: background-color 200ms linear;
 }
 
 /* Переделка блока- окончание блока */
@@ -807,7 +814,8 @@ a:hover {
 
 .rate-item:hover {
     box-shadow: 0px 0px 20px #d6d3d1;
-    border: none;
+    border: 1px solid #ffffff;
+    transition: box-shadow 250ms linear;
 }
 
 .title-rate {
@@ -855,6 +863,7 @@ a:hover {
 .button-rate:hover {
     color: var(--background-orange);
     background-color: var(--secondary-color);
+    transition: background-color 250ms linear;
 }
 
 .button-rate:active {
@@ -939,4 +948,5 @@ a:hover {
 
 .messengers-icon:hover {
     color: var(--secondary-color);
+    transition: color 200ms linear;
 }
